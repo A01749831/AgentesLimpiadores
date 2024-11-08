@@ -22,10 +22,10 @@ def agent_portrayal(agent):
     return portrayal
 
 
-limpiadores: int = 3
-suciedad: int = 45
-w: int = 8
-h: int = 7
+limpiadores: int = 100
+suciedad: int = 40
+w: int = 10
+h: int = 10
 
 grid = mesa.visualization.CanvasGrid(
     agent_portrayal,
