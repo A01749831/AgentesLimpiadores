@@ -25,8 +25,11 @@ class cleaner(Agent):
                 print(f"Agente {self.unique_id} limpió la posición {current_position}")
         
         possible = self.model.grid.get_neighborhood(self.pos, moore=True, include_center=False)
-        new_position = self.random.choice(possible)
-        self.model.grid.move_agent(self, new_position)
+        while True:
+            new_position = self.random.choice(possible)
+            if self.model.grid.is_cell_empty(new_position):
+                self.model.grid.move_agent(self, new_position)
+                break
         
 class cleanModel(Model):
     def __init__(self, N, d, w, h):
