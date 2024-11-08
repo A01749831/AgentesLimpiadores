@@ -1,8 +1,6 @@
 """
 Descripción:
-Este código implementa un modelo de simulación de agentes utilizando la biblioteca Mesa. Incluye agentes que representan
-entidades "sucias" y agentes "limpiadores" que se encargan de limpiar estas entidades dentro de una rejilla. Además,
-el modelo rastrea el número de pasos requeridos y el tiempo transcurrido para completar la limpieza.
+Este código implementa un modelo de simulación de agentes utilizando la biblioteca Mesa. Incluye agentes que representan entidades "sucias" y agentes "limpiadores" que se encargan de limpiar estas entidades dentro de una rejilla. Además,el modelo rastrea el número de pasos requeridos y el tiempo transcurrido para completar la limpieza.
 
 Autores:
 Víctor Alejandro Morales García
